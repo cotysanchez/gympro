@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymPro Elite — Tienda de Suplementos</title>
+  <meta name="description" content="Suplementos deportivos premium. Whey Protein, Creatina, BCAA, Pre-workout y más. Pureza garantizada en cada scoop." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23CCFF00'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='system-ui' font-weight='900' font-size='16' fill='%231D1D1F'>G</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">GYMPRO<span> ELITE</span></a>
+
+      <div class="nav__links">
+        <a href="index.html#planes">Planes</a>
+        <a href="index.html#bento">Actividades</a>
+        <a href="shop.html" class="active">Tienda</a>
+        <a href="index.html#sedes">Sedes</a>
+      </div>
+
+      <button class="nav__burger" id="burger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html#planes" class="nav__cta">Únete</a>
+    </div>
+
+    <div class="nav__mobile" id="nav-mobile" aria-hidden="true">
+      <a href="index.html#planes">Planes</a>
+      <a href="index.html#bento">Actividades</a>
+      <a href="shop.html">Tienda</a>
+      <a href="index.html#sedes">Sedes</a>
+      <a href="legal.html">Legal</a>
+    </div>
+  </nav>
+
+  <!-- ================================================================
+       SHOP HERO BANNER
+       ================================================================ -->
+  <header class="shop-hero" aria-label="Encabezado tienda">
+    <p class="shop-hero__eyebrow">E-Shop · Suplementos Deportivos</p>
+    <h1 class="shop-hero__title">
+      Suplementos<br /><span>Pro</span>
+    </h1>
+    <p class="shop-hero__sub">Pureza certificada · Precios directos · Entrega coordinada</p>
+  </header>
+
+  <!-- ================================================================
+       FEATURED PRODUCTS SLIDER — Swiper con navegación por flechas en
+       desktop y swipe en mobile
+       ================================================================ -->
+  <section class="shop-slider-wrap reveal" aria-label="Productos destacados">
+    <div class="shop-slider-header">
+      <h2>Destacados</h2>
+      <div class="shop-nav-btns" aria-label="Navegar productos">
+        <button class="shop-nav-btn shop-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+        <button class="shop-nav-btn shop-next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Swiper: slides renderiazadas dinámicamente desde JS -->
+    <div class="shop-swiper swiper">
+      <div class="swiper-wrapper">
+        <!-- Productos insertados por main.js → initShopSlider() -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CATEGORY FILTERS — Filtrado en tiempo real sin recarga
+       ================================================================ -->
+  <section class="shop-filters reveal" aria-label="Filtrar por categoría" role="group">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="Proteína">Proteína</button>
+    <button class="filter-btn" data-filter="Fuerza">Fuerza</button>
+    <button class="filter-btn" data-filter="Recuperación">Recuperación</button>
+    <button class="filter-btn" data-filter="Pre-Entreno">Pre-Entreno</button>
+    <button class="filter-btn" data-filter="Vitaminas">Vitaminas</button>
+  </section>
+
+  <!-- ================================================================
+       PRODUCT GRID — CSS Grid responsivo, filtrable por categoría
+       ================================================================ -->
+  <section class="shop-grid-wrap" aria-label="Catálogo de productos">
+    <div class="shop-grid" id="shop-grid" role="list">
+      <!-- Tarjetas insertadas por main.js → renderShopGrid() -->
+    </div>
+
+    <!-- Estado vacío cuando no hay productos en la categoría seleccionada -->
+    <div class="shop-empty" id="shop-empty" role="status" aria-live="polite">
+      <p>No hay productos en esta categoría por el momento.</p>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__logo-txt">GYMPRO<strong>ELITE</strong></span>
+        <p class="footer__tagline">Domina tu destino.</p>
+      </div>
+
+      <nav class="footer__social" aria-label="Redes sociales">
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Threads">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.028-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291 1.195-.069 2.314.158 3.02.142-.126-.981-.439-1.676-.96-2.075-.595-.46-1.42-.698-2.507-.713l-.06-.001c-1.05 0-2.278.317-2.978 1.404l-1.74-1.133C8.764 2.585 10.26 2 12.085 2l.078.002c3.726.053 5.8 2.366 5.8 5.767 0 .27-.011.537-.033.801.307.219.594.457.857.713 1.087 1.051 1.783 2.394 1.952 3.799.232 1.935-.117 4.434-2.29 6.482-1.884 1.779-4.207 2.641-7.585 2.436z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="footer__links">
+        <a href="legal.html#privacy">Privacy Policy</a>
+        <span class="footer__divider">·</span>
+        <a href="legal.html#terms">Terms of Purchase</a>
+        <span class="footer__divider">·</span>
+        <a href="legal.html#refund">Refund Policy</a>
+      </div>
+
+      <p class="footer__powered">
+        Powered by <a href="https://csdigitalpro.com" target="_blank" rel="noopener noreferrer">CS DigitalPro</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ================================================================
+       MODAL: PRODUCTO
+       ================================================================ -->
+  <div class="modal-overlay" id="modal-product" role="dialog" aria-modal="true" aria-labelledby="pm-name">
+    <div class="modal modal--product">
+      <button class="modal__close" onclick="closeModal('modal-product')" aria-label="Cerrar">✕</button>
+      <div class="product-modal">
+        <div class="product-modal__img">
+          <img id="pm-img" src="" alt="" />
+          <span class="product-modal__badge" id="pm-cat"></span>
+        </div>
+        <div class="product-modal__info">
+          <span class="product-modal__cat" id="pm-cat-lbl"></span>
+          <h2 class="product-modal__name" id="pm-name"></h2>
+          <p class="product-modal__desc" id="pm-desc"></p>
+          <div id="pm-variants"></div>
+          <p class="product-modal__price" id="pm-price"></p>
+          <div class="product-modal__actions">
+            <button class="btn btn--dark" onclick="addToCart()">Agregar al carrito</button>
+            <button class="btn btn--neon" onclick="buyOnWhatsApp()">Comprar por WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       MODAL: COMPRA EXITOSA
+       ================================================================ -->
+  <div class="modal-overlay" id="modal-success" role="dialog" aria-modal="true" aria-labelledby="success-title">
+    <div class="modal modal--success">
+      <button class="modal__close" onclick="closeModal('modal-success')" aria-label="Cerrar">✕</button>
+      <div class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="28" stroke="#CCFF00" stroke-width="2"/>
+          <path d="M18 30 L26 38 L42 22" stroke="#CCFF00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 id="success-title">¡Compra Exitosa!</h2>
+      <p>Tu pedido fue registrado. Nos comunicaremos por WhatsApp para coordinar el envío. ¡Gracias por elegir GymPro Elite!</p>
+      <button class="btn btn--dark" onclick="closeModal('modal-success')">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Cart bubble -->
+  <button class="cart-bubble" id="cart-bubble" aria-label="Ver carrito">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <path d="M16 10a4 4 0 01-8 0"/>
+    </svg>
+    <span class="cart-count" id="cart-count">0</span>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
