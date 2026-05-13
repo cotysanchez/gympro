@@ -12,7 +12,7 @@ const PRODUCTS = [
     id: 1,
     name: "Whey Protein Gold",
     category: "Proteína",
-    price: 18990,
+    price: 42000,
     img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=80&auto=format&fit=crop",
     desc: "Proteína de suero de leche de alta calidad con 25g por servicio. Filtrada por microfiltración de flujo cruzado para máxima pureza y digestibilidad. Aminoácidos esenciales completos.",
     variants: {
@@ -24,7 +24,7 @@ const PRODUCTS = [
     id: 2,
     name: "Creatina Monohidrato",
     category: "Fuerza",
-    price: 8990,
+    price: 64000,
     img: "https://images.unsplash.com/photo-1544991875-5dc1b05f5b5d?w=700&q=80&auto=format&fit=crop",
     desc: "Creatina monohidrato micronizada de grado farmacéutico. Aumenta la fuerza explosiva, la potencia anaeróbica y acelera la recuperación entre series intensas.",
     variants: {
@@ -36,7 +36,7 @@ const PRODUCTS = [
     id: 3,
     name: "BCAA 2:1:1 Aminoácidos",
     category: "Recuperación",
-    price: 12490,
+    price: 36000,
     img: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=700&q=80&auto=format&fit=crop",
     desc: "Aminoácidos de cadena ramificada en ratio científico 2:1:1. Leucina, Isoleucina y Valina para reducir el catabolismo muscular y acelerar la recuperación post-entrenamiento.",
     variants: {
@@ -48,7 +48,7 @@ const PRODUCTS = [
     id: 4,
     name: "Pre-Workout Extreme",
     category: "Pre-Entreno",
-    price: 14990,
+    price: 37000,
     img: "https://picsum.photos/seed/preworkout/700/700",
     desc: "Fórmula avanzada con cafeína anhidra, beta-alanina, citrulina malato y creatina. Máxima energía sostenida, foco mental extremo y pump muscular garantizados por 90+ minutos.",
     variants: {
@@ -60,7 +60,7 @@ const PRODUCTS = [
     id: 5,
     name: "Glutamina Micronizada",
     category: "Recuperación",
-    price: 9490,
+    price: 32000,
     img: "https://picsum.photos/seed/glutamine/700/700",
     desc: "L-Glutamina micronizada de alta pureza. Acelera la recuperación muscular post-entrenamiento, mejora la salud intestinal y refuerza el sistema inmunitario en atletas.",
     variants: {
@@ -72,7 +72,7 @@ const PRODUCTS = [
     id: 6,
     name: "Multivitamin + Cafeína ENA",
     category: "Vitaminas",
-    price: 11990,
+    price: 38000,
     img: "https://picsum.photos/seed/multivitamin/700/700",
     desc: "Complejo multivitamínico deportivo ENA Sport con cafeína natural de guaraná. 23 vitaminas y minerales esenciales formulados específicamente para el deportista moderno.",
     variants: {
@@ -84,7 +84,7 @@ const PRODUCTS = [
     id: 7,
     name: "Pre-War ENA",
     category: "Pre-Entreno",
-    price: 16490,
+    price: 33000,
     img: "https://picsum.photos/seed/prewar-ena/700/700",
     desc: "Pre-War ENA: la fórmula más potente de la línea ENA Sport. Sistema de energía triple con cafeína anhidra, taurina y extracto de hierba mate para máximo rendimiento y recuperación.",
     variants: {
@@ -96,7 +96,7 @@ const PRODUCTS = [
     id: 8,
     name: "Creatina Creapure® Premium",
     category: "Fuerza",
-    price: 19990,
+    price: 62000,
     img: "https://picsum.photos/seed/creapure/700/700",
     desc: "Creatina monohidrato certificada Creapure® — el estándar de oro de la industria. Fabricada en Alemania con pureza >99.9%. La diferencia se siente desde la primera semana.",
     variants: {
