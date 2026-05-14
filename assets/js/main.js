@@ -9,101 +9,137 @@
 
 const PRODUCTS = [
   {
-    id: 1,
-    name: "Whey Protein Gold",
-    category: "Proteína",
-    price: 42000,
-    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=80&auto=format&fit=crop",
-    desc: "Proteína de suero de leche de alta calidad con 25g por servicio. Filtrada por microfiltración de flujo cruzado para máxima pureza y digestibilidad. Aminoácidos esenciales completos.",
+    id: 11,
+    name: 'Whey Protein VX',
+    category: 'Proteína',
+    price: 82000,
+    img: 'assets/images/100real-wheyprotein-VX.webp',
+    desc: 'Proteína de suero de leche de alta calidad con 25g por servicio. Filtrada por microfiltración de flujo cruzado para máxima pureza y digestibilidad. Aminoácidos esenciales completos.',
     variants: {
-      "Sabor": ["Chocolate", "Vainilla", "Frutilla", "Sin sabor"],
-      "Peso":  ["1 kg", "2 kg", "5 kg"]
-    }
+      Sabor: ['Chocolate', 'Vainilla', 'Frutilla', 'Sin sabor'],
+      Peso: ['1 kg', '2 kg', '5 kg'],
+    },
+  },
+  {
+    id: 10,
+    name: '100% BCAA Aminoácid Formula',
+    category: 'Recuperación',
+    price: 36000,
+    img: 'assets/images/100BCAA-AminoAcidformula-BioTechUSA.webp',
+    desc: 'Aminoácidos de cadena ramificada en ratio científico 2:1:1. Leucina, Isoleucina y Valina para reducir el catabolismo muscular y acelerar la recuperación post-entrenamiento.',
+    variants: {
+      Sabor: ['Sandía', 'Tropical', 'Limón', 'Sin sabor'],
+      Peso: ['300 g', '600 g'],
+    },
+  },
+  {
+    id: 1,
+    name: 'Whey Protein Gold',
+    category: 'Proteína',
+    price: 42000,
+    img: 'assets/images/wheyprotein-creatine.webp',
+    desc: 'Proteína de suero de leche de alta calidad con 25g por servicio. Filtrada por microfiltración de flujo cruzado para máxima pureza y digestibilidad. Aminoácidos esenciales completos.',
+    variants: {
+      Sabor: ['Chocolate', 'Vainilla', 'Frutilla', 'Sin sabor'],
+      Peso: ['1 kg', '2 kg', '5 kg'],
+    },
   },
   {
     id: 2,
-    name: "Creatina Monohidrato",
-    category: "Fuerza",
+    name: 'Creatina Monohidrato',
+    category: 'Fuerza',
     price: 64000,
-    img: "https://images.unsplash.com/photo-1544991875-5dc1b05f5b5d?w=700&q=80&auto=format&fit=crop",
-    desc: "Creatina monohidrato micronizada de grado farmacéutico. Aumenta la fuerza explosiva, la potencia anaeróbica y acelera la recuperación entre series intensas.",
+    img: 'assets/images/crea zero-creatine drink powder-BioTechUSA.webp',
+    desc: 'Creatina monohidrato micronizada de grado farmacéutico. Aumenta la fuerza explosiva, la potencia anaeróbica y acelera la recuperación entre series intensas.',
     variants: {
-      "Sabor": ["Sin sabor", "Limón"],
-      "Peso":  ["300 g", "500 g", "1 kg"]
-    }
+      Sabor: ['Sin sabor', 'Limón'],
+      Peso: ['300 g', '500 g', '1 kg'],
+    },
   },
   {
     id: 3,
-    name: "BCAA 2:1:1 Aminoácidos",
-    category: "Recuperación",
+    name: 'BCAA 2:1:1 Aminoácidos',
+    category: 'Recuperación',
     price: 36000,
-    img: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=700&q=80&auto=format&fit=crop",
-    desc: "Aminoácidos de cadena ramificada en ratio científico 2:1:1. Leucina, Isoleucina y Valina para reducir el catabolismo muscular y acelerar la recuperación post-entrenamiento.",
+    img: 'assets/images/BCAA-Amino.webp',
+    desc: 'Aminoácidos de cadena ramificada en ratio científico 2:1:1. Leucina, Isoleucina y Valina para reducir el catabolismo muscular y acelerar la recuperación post-entrenamiento.',
     variants: {
-      "Sabor": ["Sandía", "Tropical", "Limón", "Sin sabor"],
-      "Peso":  ["300 g", "600 g"]
-    }
+      Sabor: ['Sandía', 'Tropical', 'Limón', 'Sin sabor'],
+      Peso: ['300 g', '600 g'],
+    },
   },
   {
     id: 4,
-    name: "Pre-Workout Extreme",
-    category: "Pre-Entreno",
+    name: 'Pre-Workout Extreme',
+    category: 'Pre-Entreno',
     price: 37000,
-    img: "https://picsum.photos/seed/preworkout/700/700",
-    desc: "Fórmula avanzada con cafeína anhidra, beta-alanina, citrulina malato y creatina. Máxima energía sostenida, foco mental extremo y pump muscular garantizados por 90+ minutos.",
+    img: 'assets/images/PreWorkout-Supernova-Nutrabolics.webp',
+    desc: 'Fórmula avanzada con cafeína anhidra, beta-alanina, citrulina malato y creatina. Máxima energía sostenida, foco mental extremo y pump muscular garantizados por 90+ minutos.',
     variants: {
-      "Sabor": ["Frutas del bosque", "Menta explosiva", "Naranja cítrica"],
-      "Peso":  ["300 g", "450 g"]
-    }
+      Sabor: ['Frutas del bosque', 'Menta explosiva', 'Naranja cítrica'],
+      Peso: ['300 g', '450 g'],
+    },
   },
   {
     id: 5,
-    name: "Glutamina Micronizada",
-    category: "Recuperación",
+    name: 'Glutamina Micronizada',
+    category: 'Recuperación',
     price: 32000,
-    img: "https://picsum.photos/seed/glutamine/700/700",
-    desc: "L-Glutamina micronizada de alta pureza. Acelera la recuperación muscular post-entrenamiento, mejora la salud intestinal y refuerza el sistema inmunitario en atletas.",
+    img: 'assets/images/glutamineZero-BioTechUSA.webp',
+    desc: 'L-Glutamina micronizada de alta pureza. Acelera la recuperación muscular post-entrenamiento, mejora la salud intestinal y refuerza el sistema inmunitario en atletas.',
     variants: {
-      "Sabor": ["Sin sabor"],
-      "Peso":  ["300 g", "500 g", "1 kg"]
-    }
+      Sabor: ['Sin sabor'],
+      Peso: ['300 g', '500 g', '1 kg'],
+    },
   },
   {
     id: 6,
-    name: "Multivitamin + Cafeína ENA",
-    category: "Vitaminas",
+    name: 'Pre Workout MonsterShred',
+    category: 'Pre-Entreno',
     price: 38000,
-    img: "https://picsum.photos/seed/multivitamin/700/700",
-    desc: "Complejo multivitamínico deportivo ENA Sport con cafeína natural de guaraná. 23 vitaminas y minerales esenciales formulados específicamente para el deportista moderno.",
+    img: 'assets/images/Preworkout-NitricOxideBooster.webp',
+    desc: 'Pre-Entreno Nitric Oxid Booster. Formulado específicamente para el deportista moderno.',
     variants: {
-      "Presentación": ["60 cápsulas", "120 cápsulas"],
-      "Tipo":         ["Con cafeína", "Sin cafeína"]
-    }
+      Presentación: ['60 cápsulas', '120 cápsulas'],
+      Tipo: ['Con cafeína', 'Sin cafeína'],
+    },
   },
   {
     id: 7,
-    name: "Pre-War ENA",
-    category: "Pre-Entreno",
+    name: 'Opti-Men HighPotency',
+    category: 'Pre-Entreno',
     price: 33000,
-    img: "https://picsum.photos/seed/prewar-ena/700/700",
-    desc: "Pre-War ENA: la fórmula más potente de la línea ENA Sport. Sistema de energía triple con cafeína anhidra, taurina y extracto de hierba mate para máximo rendimiento y recuperación.",
+    img: 'assets/images/opti-menHIighPotency-ON.webp',
+    desc: 'High Potency: la fórmula más potente de la línea. Sistema de energía triple con cafeína anhidra, taurina y extracto de hierba mate para máximo rendimiento y recuperación.',
     variants: {
-      "Sabor": ["Mango pasión", "Maracuyá boost", "Cereza negra"],
-      "Peso":  ["400 g", "800 g"]
-    }
+      Sabor: ['Mango pasión', 'Maracuyá boost', 'Cereza negra'],
+      Peso: ['400 g', '800 g'],
+    },
   },
   {
     id: 8,
-    name: "Creatina Creapure® Premium",
-    category: "Fuerza",
+    name: 'Creatina Creapure® Premium',
+    category: 'Fuerza',
     price: 62000,
-    img: "https://picsum.photos/seed/creapure/700/700",
-    desc: "Creatina monohidrato certificada Creapure® — el estándar de oro de la industria. Fabricada en Alemania con pureza >99.9%. La diferencia se siente desde la primera semana.",
+    img: 'assets/images/creatinphx-biotechUSA.webp',
+    desc: 'Creatina monohidrato certificada Creapure® — el estándar de oro de la industria. Fabricada en Alemania con pureza >99.9%. La diferencia se siente desde la primera semana.',
     variants: {
-      "Sabor": ["Sin sabor", "Naranja natural"],
-      "Peso":  ["500 g", "1 kg", "3 kg"]
-    }
-  }
+      Sabor: ['Sin sabor', 'Naranja natural'],
+      Peso: ['500 g', '1 kg', '3 kg'],
+    },
+  },
+  {
+    id: 9,
+    name: 'W.A.S Whey Amino Shake',
+    category: 'Proteína',
+    price: 80000,
+    img: 'assets/images/W.A.S-whey+amino+shake-OLIMP.webp',
+    desc: 'Proteína de suero de leche de alta calidad con 25g por servicio. Filtrada por microfiltración de flujo cruzado para máxima pureza y digestibilidad. Aminoácidos esenciales completos.',
+    variants: {
+      Sabor: ['Chocolate', 'Vainilla', 'Frutilla', 'Sin sabor'],
+      Peso: ['1 kg', '2 kg', '5 kg'],
+    },
+  },
 ];
 
 const ACTIVITIES = [
