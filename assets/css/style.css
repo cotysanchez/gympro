@@ -1561,6 +1561,12 @@ select {
 
 /* --- Mobile (< 768px) --- */
 @media (max-width: 767px) {
+  .nav {
+    padding: 16px 16px;
+  }
+  .nav__inner {
+    overflow: hidden;
+  }
   .nav__links {
     display: none;
   }
@@ -1576,7 +1582,7 @@ select {
 
   /* Hero */
   .hero {
-    padding: 100px 20px 60px;
+    padding: 130px 20px 60px;
   }
   .hero__sub {
     font-size: 14px;
