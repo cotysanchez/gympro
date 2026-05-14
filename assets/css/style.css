@@ -128,20 +128,31 @@ input, select { font-family: var(--font); }
 /* Mobile nav drawer */
 .nav__mobile {
   display: none; flex-direction: column; gap: 0;
-  position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 99;
   background: rgba(245,245,247,0.98);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 16px 24px;
   transform: translateY(-110%);
   transition: transform 0.5s var(--ease);
+  pointer-events: none;
 }
-.nav__mobile.open { transform: translateY(0); }
+.nav__mobile.open { transform: translateY(0); pointer-events: auto; }
 .nav__mobile a {
   padding: 14px 0; font-size: 16px; font-weight: 600;
   border-bottom: 1px solid var(--border); color: var(--dark);
 }
 .nav__mobile a:last-child { border: none; }
+.nav__mobile-cta {
+  margin-top: 8px;
+  display: inline-block !important;
+  background: var(--dark); color: var(--white) !important;
+  padding: 12px 24px !important; border-radius: 50px;
+  text-align: center; font-size: 14px !important; font-weight: 700 !important;
+  transition: background 0.3s var(--ease);
+}
+.nav__mobile-cta:hover { background: #2d2d30; }
 
 /* ============================================================
    6. HERO SECTION — Parallax dinámico en 3 capas
@@ -695,6 +706,7 @@ input, select { font-family: var(--font); }
   .nav__links    { display: none; }
   .nav__burger   { display: flex; }
   .nav__mobile   { display: flex; }
+  .nav__cta      { display: none; }
 
   /* Hero */
   .hero { padding: 100px 20px 60px; }
