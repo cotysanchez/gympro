@@ -22,7 +22,7 @@ const PRODUCTS = [
   },
   {
     id: 10,
-    name: '100% BCAA Aminoácid Formula',
+    name: 'BCAA Aminoácid Formula',
     category: 'Recuperación',
     price: 36000,
     img: 'assets/images/100BCAA-AminoAcidformula-BioTechUSA.webp',
