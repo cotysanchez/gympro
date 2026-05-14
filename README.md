@@ -1,6 +1,6 @@
 # GymPro Elite Fitness Center
 
-Sitio web de élite para un fitness center premium, desarrollado con estética Apple Light Tech. Construido para la agencia **CsDigitalPro** con foco en UX de alto impacto, performance mobile-first y animaciones nativas sin dependencias pesadas.
+Sitio web de élite para un fitness center premium, desarrollado con estética Apple Light Tech. Construido por la agencia **CsDigitalPro** con foco en UX de alto impacto, performance mobile-first y animaciones nativas sin dependencias pesadas.
 
 ---
 
@@ -89,7 +89,7 @@ gympro/
 4. Hacé clic derecho sobre `index.html` → **"Open with Live Server"**.
 5. El sitio abrirá en `http://127.0.0.1:5500` con hot-reload automático.
 
-> **Sin Live Server:** podés abrir `index.html` directamente en el navegador, aunque las imágenes externas de Unsplash/Picsum requieren conexión a internet.
+> **Sin Live Server:** podés abrir `index.html` directamente en el navegador.
 
 ### Personalización rápida
 
@@ -113,7 +113,7 @@ Chrome 90+ · Firefox 88+ · Safari 14+ · Edge 90+
 ```
 ╔══════════════════════════════════════════════════════╗
 ║                                                      ║
-║      Diseñado y Desarrollado por CS DigitalPro       ║
+║      Diseñado y Desarrollado por CsDigitalPro        ║
 ║             https://csdigitalpro.com                 ║
 ║                                                      ║
 ║      © 2025 GymPro Elite Fitness Center.             ║
